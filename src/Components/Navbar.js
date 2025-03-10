@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 function Navbar(props) {
   return (
@@ -53,14 +53,14 @@ function Navbar(props) {
 
 // Setting the Prop Types
 Navbar.propTypes = {
-    title: PropTypes.string,
-    aboutText: PropTypes.string
+  title: PropTypes.string,
+  aboutText: PropTypes.string,
 };
 
 // Setting the default Props
 Navbar.defaultProps = {
-    title: "demo text",
-    aboutText: "demo text"
+  title: "demo text",
+  aboutText: "demo text",
 };
 
 export default Navbar;
