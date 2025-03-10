@@ -12,6 +12,12 @@ export default function TextForm(props) {
     console.log("On change");
     setText(event.target.value);
   };
+
+  const handleLowerCase =()=>
+  {
+    console.log("clicked on the Lower case button")
+    setText(prevText => prevText.toLowerCase())
+  }
   const [text, setText] = useState("enter the text");
 
   //  Wrong Way to change the state
@@ -28,8 +34,11 @@ export default function TextForm(props) {
           value={text}
         ></textarea>
       </div>
-      <button className="btn btn-primary" onClick={handleText}>
+      <button className="btn btn-primary mx -3" onClick={handleText}>
         Convert to Upper Case
+      </button>
+      <button className = "btn btn-primary mx-3" onClick = {handleLowerCase}>
+        Convert to Lower Case
       </button>
     </div>
   );
