@@ -18,7 +18,7 @@ export default function TextForm(props) {
     console.log("clicked on the Lower case button")
     setText(prevText => prevText.toLowerCase())
   }
-  const [text, setText] = useState("enter the text");
+  const [text, setText] = useState("");
 
   //  Wrong Way to change the state
   //  text =  "Demo text"
